@@ -12,6 +12,10 @@
     font-family: "Barlow Semi Condensed";
     src: url("BarlowSemiCondensed-Regular.ttf");
 }
+@font-face {
+    font-family: "poppins black";
+    src: url("POPPINS-BLACK.TTF");
+}
 
 body {
     background-image: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
@@ -215,7 +219,7 @@ body {
 }
 
 .rules-text {
-    font-family: "poppins";
+    font-family: "poppins black";
     text-align: center;
     font-weight: bolder;
 
