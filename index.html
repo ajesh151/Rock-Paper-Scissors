@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title> Rock Paper Scissors </title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="main">
+      <div class="top-section">
+        <div class="left-side">
+          <img class="logo" src="logo.png">
+        </div>
+        <div class="right-side">
+          <h1 class="score-text">SCORE</h1>
+          <h1 id="score-number"> 0 </h1>
+        </div>
+      </div>
+      <div id="middle-section">
+        <div class="triangle">
+          <svg width="313" height="278">
+            <path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z" />
+          </svg>
+        </div>
+        <img class="icon rock" src="rock.svg" onclick="rock()" alt="">
+        <img class="icon paper" src="paper.svg" onclick="paper()" alt="">
+        <img class="icon scissors" src="scissors.svg" onclick="scissors()" alt="">
+      </div>
+      <div id="while-game-play">
+        <div id="result-image">
+          <div class="user-pick">
+            <img class="icon" id="my-choice" src="">
+            <h1 class="picks"> MY PICK </h1>
+          </div>
+          <div class="house-pick">
+            <img class="icon" id="computer-choice" src="">
+            <h1 class="picks"> AI PICK </h1>
+          </div>
+        </div>
+        <h1 id="result-statement"> </h1>
+        <button id="play-again" onclick="playAgain()">PLAY AGAIN</button>
+      </div>
+      <div class="bottom-section" style="display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;">
+        <button class="rules-button" onclick="displayRules()">R U L E S</button>
+        <div class="attribution">
+          <h3> Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+          </h3>
+          <h3>Coded by: <a href="https://github.com/ajesh151">Ajesh Pokhrel</a></h3>
+        </div>
+      </div>
+    </div>
+    <div id="rules-image" style="display: none;">
+      <div>
+        <h1 class="rules-text" style="color:hsl(237, 49%, 15%)">
+          RULES
+        </h1>
+      </div>
+      <div><img src="rules.svg" class="rules" alt=""></div>
+      <div><i class="fa fa-close" onclick="closerules()" style="color: hsl(237, 49%, 15%); font-size: 50px;"></i></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+
+</html>
