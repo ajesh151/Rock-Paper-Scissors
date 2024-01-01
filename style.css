@@ -219,7 +219,7 @@ body {
 }
 
 .rules-text {
-    font-family: "poppins black";
+    font-family: url("POPPINS-BLACK.TTF");
     text-align: center;
 }
 
