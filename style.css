@@ -13,7 +13,7 @@
     src: url("BarlowSemiCondensed-Regular.ttf");
 }
 @font-face {
-    font-family: "poppins black";
+    font-family: "poppins-black";
     src: url("POPPINS-BLACK.TTF");
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .rules-text {
-    font-family: "poppins regular";
+    font-family: "poppins-black";
     text-align: center;
 }
 
